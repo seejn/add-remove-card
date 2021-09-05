@@ -1,0 +1,80 @@
+button {
+  padding: 1.5em 0.7em;
+  border: none;
+  background-color: #ee9090;
+}
+
+#form_modal {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.form_modal {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.form_modalActive {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+form {
+  width: 35%;
+  -webkit-box-shadow: 0px 0px 6px 2px rgba(86, 86, 86, 0.7);
+          box-shadow: 0px 0px 6px 2px rgba(86, 86, 86, 0.7);
+  margin: 0 auto;
+  padding: 1em;
+  background-color: white;
+}
+
+form .close_btn {
+  float: right;
+  cursor: pointer;
+}
+
+form input,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin: 0.5em;
+  outline: none;
+}
+
+.userinput {
+  border: none;
+  border-bottom: 2px solid #ee8f8f;
+}
+
+.submit {
+  width: 25%;
+  border: none;
+  padding: 1em;
+  background-color: #ee8f8f;
+}
+
+.submit:hover {
+  background-color: #965858;
+}
+
+.submit:active {
+  background-color: #5f0606;
+}
+
+@media only screen and (max-width: 950px) {
+  form {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  form {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=form.css.map */
